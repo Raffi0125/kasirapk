@@ -37,7 +37,7 @@ $menu = ambil_data("SELECT DISTINCT * FROM pesanan
         <tr>
             <td>Atas Nama</td>
             <td>:</td>
-            <td><?= $menu[0]["nama_pelanggan"]; ?></td>
+            <td><?= $menu[0]["username"]; ?></td>
         </tr>
         <tr>
             <td>Waktu</td>
