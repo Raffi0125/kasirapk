@@ -25,7 +25,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-2 logo">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="logoseblak.png" alt="Logo">
                     </a>
                 </div>
@@ -1000,7 +1000,7 @@
                                     <div class="col-lg-4">
                                         <div class="footer-info">
                                             <div class="footer-logo">
-                                                <a href="index.html">
+                                                <a href="index.php">
                                                     <img src="logoseblak2.png" alt="">
                                                 </a>
                                             </div>
