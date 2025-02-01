@@ -14,12 +14,12 @@ if (!isset($_SESSION["akun-admin"])) {
 // Fetch transaction data by month and calculate the total
 $transactions_per_month = ambil_data("
     SELECT 
-        DATE_FORMAT(waktu, '%Y-%m') AS bulan, 
+        DATE_FORMAT(waktu, '%m-%Y') AS bulan, 
         SUM(p.qty * m.harga) AS total_transaksi
     FROM transaksi t
     JOIN pesanan p ON t.kode_pesanan = p.kode_pesanan
     JOIN menu m ON p.kode_menu = m.kode_menu
-    GROUP BY DATE_FORMAT(waktu, '%Y-%m')
+    GROUP BY DATE_FORMAT(waktu, '%m-%Y')
     ORDER BY bulan DESC
 ");
 
